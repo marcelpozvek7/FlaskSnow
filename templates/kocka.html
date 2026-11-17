@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>kocka</title>
+</head>
+<body>
+    Vrgel si: {{ kocka }} 
+</body>
+</html>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 50px 70px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+p {
+    font-size: 20px;
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+.result {
+    font-size: 75px;
+    font-weight: bold;
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.12);
+    padding: 20px 45px;
+    border-radius: 20px;
+    display: inline-block;
+    text-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+    animation: pop 0.5s ease;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+</style>
