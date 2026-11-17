@@ -16,6 +16,18 @@ def kocka(N):
     rng=(random.randint(1,int(N)))
     print(rng)
     return render_template("kocka.html", kocka = rng)
-    
+
+
+@app.route("/kocka/<N>")
+def love(N):
+    rng=(random.randint(1,int(N)))
+    print(rng)
+    return render_template("love.html", kocka = rng)
+
+sez = [1,2,3]
+print(random.choice(sez))
+
+
+
 
 app.run(debug = True)
